@@ -9,5 +9,8 @@ ADD . /fr801xh
 WORKDIR /fr801xh/examples/none_evm/
 RUN ./build.sh
 
+WORKDIR /fr801xh/examples/dev1.0/
+RUN ./build.sh
+
 #FROM scratch AS export-stage
 #COPY --from=build-stage /fr801xh/examples/none_evm/ble_simple_central/gcc/build/ble_simple_central.bin /
